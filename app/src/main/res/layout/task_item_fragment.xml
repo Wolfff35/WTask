@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              tools:context="com.wolff.wtask.fragments.Task_item_fragment"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edTask_Name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="8"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/edTask_Name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="8"
+                android:ems="10"
+                android:hint="@string/task_name_label"
+                android:inputType="textPersonName"
+                android:text=""
+                android:theme="@style/MyEditText"/>
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tvTask_DateCreation_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/task_dateCreation_item"/>
+
+        <Button
+            android:id="@+id/btnTask_DateCreation"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+         <TextView
+             android:id="@+id/tvTask_category_label"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="10dp"
+             android:layout_weight="1"
+             android:gravity="center_vertical"
+             android:text="@string/task_category_item"/>
+
+         <Button
+             android:id="@+id/btnTask_category"
+             style="@android:style/Widget.Button.Inset"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="10dp"
+             android:layout_weight="3"/>
+
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edTask_describe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="3"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/edTask_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="8"
+                android:ems="10"
+                android:hint="@string/task_describe_label"
+                android:inputType="textPersonName"
+                android:lines="3"
+                android:text=""
+                android:theme="@style/MyEditText"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

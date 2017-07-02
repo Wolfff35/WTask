@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="WCategorys">
+        <item>null</item>
+        <item>@string/urgent_important</item>
+        <item>@string/urgent_unimportant</item>
+        <item>@string/non_urgent_important</item>
+        <item>@string/non_urgent_unimportant</item>
+    </array>
+</resources>
